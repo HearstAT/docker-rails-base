@@ -28,7 +28,7 @@ RUN apk update && apk add \
     echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories &&\
     echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories &&\
     echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories &&\
-    apk update $$ add exim &&\
+    apk update && add exim &&\
     #mkdir -p /var/spool/exim &&\
     #mkdir -p /usr/lib/exim/ &&\
     mkdir -p /var/log/exim &&\
